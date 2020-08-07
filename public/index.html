@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>Vue学习实例</title>
-    <script type="text/javascript" src="//webapi.amap.com/maps?v=2.0&key=93ecd9f56d15d54c70623ae55c6ed128&plugin=AMap.CitySearch"></script>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>Vue学习实例</title>
+  <!-- 引入地图插件 -->
+  <script type="text/javascript"
+    src="//webapi.amap.com/maps?v=2.0&key=93ecd9f56d15d54c70623ae55c6ed128&plugin=AMap.CitySearch"></script>
+  <!-- 引入Tween.js、Color.js插件（动画相关） -->
+  <script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/color-js@1.0.3"></script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+</body>
 </html>

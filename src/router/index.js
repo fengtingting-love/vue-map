@@ -45,6 +45,11 @@ Vue.use(VueRouter)
       name:'SlotParent',
       component:()=>import('../views/SlotParent')
     },
+    {
+      path:'/statusAnimation',
+      name:'StatusAnimation',
+      component:()=>import('../views/StatusAnimation')
+    }
 ]
 
 const router = new VueRouter({
